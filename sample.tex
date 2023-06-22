@@ -1,0 +1,48 @@
+%#!platex -kanji=%k
+\documentclass{jarticle}
+\title{レポートなりよ}
+\author{c103333\\公益太郎}
+\begin{document}
+\maketitle
+\section{はじめに}
+
+これがレポートのソースなり。なんやよく分からんがとりあえず文章をたっぷり
+書いてけばいいらしい。
+
+ \section{色々な記号}
+ 
+ 記号もいろいろ出るらしい。
+
+  \subsection{トランプの記号}
+
+  \begin{itemize}
+   \item $\heartsuit$ は \$$\backslash$heartsuit\$ と書く
+   \item $\spadesuit$ は \$$\backslash$spadesuit\$ と書く
+   \item $\diamondsuit$ は \$$\backslash$diamondsuit\$ と書く
+   \item $\clubsuit$ は \$$\backslash$clubesuit\$ と書く
+  \end{itemize}
+
+  \subsection{数学の記号}
+
+  \begin{itemize}
+   \item $\sum_{k=0}^{\infty}a_{k}$ とかも書けるみたい。まいっか。
+  \end{itemize}
+  同じようにソースを書いても、上のように一行で書くときと、
+  \begin{equation}
+   \sum_{k=0}^{\infty}a_{k}
+  \end{equation}
+  のように行立てのときの見え方が変わるらしい。ま、いっか。
+
+ \section{箇条書き}
+
+ 箇条書きは
+ \begin{enumerate}
+  \item 箇条書きの範囲を\verb|\begin{itemize}〜\end{itemize}| で括って
+  \item 各項目を \verb|\item| で書き始める
+ \end{enumerate}
+ らしい。これって、HTMLの「全体を \verb|<ul>〜</ul>| で括って 
+ \verb|<li>| で項目を書く」、のに似てるぞ。というか、実は\LaTeX のほうが
+ 手本らしいぞ。番号つきの箇条書きは、\verb|itemize| のかわりに
+ \verb|enumerate| にする。
+
+\end{document}
